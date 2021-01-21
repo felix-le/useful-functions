@@ -11,3 +11,11 @@ const countUp = (x, max) =>{
   countUp(x + 1, max);
 }
 countUp(0, 10);
+
+function isEvent(n){
+  if(n<0) return;
+  return n % 2 === 0;
+}
+
+
+console.log("🚀 ~ file: recursionBook.js ~ line 6 ~ isEvent(4)", isEvent(0))
