@@ -1,3 +1,4 @@
+// test 1
 import words from 'an-array-of-english-words';
 
 const countOccurrences = arr => arr.reduce((acc,str ) => ({
@@ -17,3 +18,13 @@ const findAnagrams = (word, allWords) => {
 }
 
 console.log(findAnagrams('cinema', words));
+
+// test 2
+function anagrams(stringA, stringB){
+  return clearString(stringA) === clearString(stringB);
+ }
+ 
+ function clearString(str){
+   return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+ }
+ 
